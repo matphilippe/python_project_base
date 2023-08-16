@@ -12,5 +12,8 @@ COPY requirements.txt /app/requirements.txt
 
 RUN pip install -r requirements.txt 
 
+# This should run last: it actually allows referencing your code
+COPY . .
+RUN pip install -e .
 
-CMD bash
+CMD ["bash"]

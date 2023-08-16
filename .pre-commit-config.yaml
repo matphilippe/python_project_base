@@ -39,7 +39,6 @@ repos:
         entry: pylint --score=no --rcfile=tox.ini
         language: system
         types: [python]
-        exclude: "tests|docs|anomalib/models/components/freia"
 
   # Dockerfile linting
   - repo: https://github.com/hadolint/hadolint

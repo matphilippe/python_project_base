@@ -1,5 +1,5 @@
 from your_package import hello
 
 def test_goodbye():
-    assert hello("world") == "hello world"
+    assert hello.hello("world") == "hello world"
 
