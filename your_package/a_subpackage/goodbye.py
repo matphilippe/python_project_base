@@ -1,2 +1,2 @@
-def goodbye( who = "world"):
+def goodbye(who="world"):
     return f"goodbye {who}"

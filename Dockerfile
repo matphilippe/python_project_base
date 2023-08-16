@@ -1,6 +1,4 @@
-ARG BASE=python:3.11-slim
-
-FROM $BASE
+FROM python:3.11-slim
 
 WORKDIR /app
 
@@ -10,7 +8,7 @@ WORKDIR /app
 COPY requirements.txt /app/requirements.txt
 # COPY requirements_that_changes_a_bit_more_often.txt /app/...
 
-RUN pip install -r requirements.txt 
+RUN pip install -r requirements.txt
 
 # This should run last: it actually allows referencing your code
 COPY . .
